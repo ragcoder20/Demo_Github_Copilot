@@ -36,3 +36,17 @@ def calculate_compound_interest(principal, rate, time, frequency):
     """
     amount = principal * (1 + rate / frequency) ** (frequency * time)
     return amount
+
+def calculate_simple_interest(principal, rate, time):
+    """
+    Calculate simple interest.
+
+    Args:
+        principal (float): The initial amount of money.
+        rate (float): The annual interest rate (as a decimal).
+        time (float): The time the money is invested for (in years).
+
+    Returns:
+        float: The amount of interest earned.
+    """
+    return principal * rate * time
